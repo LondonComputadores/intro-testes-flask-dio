@@ -1,0 +1,29 @@
+I did create:
+
+- local folder 'intro-testes-flask'
+- github repo 'intro-testes-flask-dio' then cloned its ssh
+- virtual environment with $ python3 -m venv test-flask
+- moved into the venv (test-flask) $ source test-flask/bin/activate
+- installed the initial requirements $ pip install flask pytest coverage
+- run the test - $ py.test
+- run the app to test the api on postman $ python app.py
+- run the coverage $ coverage run --source=app -m py.test
+- run consulta de logs do coverage $ coverage report -m
+- visualizar os testes no html com o coverage $ coverage html
+- 
+- Modificado:
+
+import unittest
+from app import web_app
+
+class TestTech(unittest.TestCase):
+  
+- Para: 
+
+from unittest import mock, TestCase
+from app import web_app
+
+class TestTech(TestCase):
+
+-
+-  
